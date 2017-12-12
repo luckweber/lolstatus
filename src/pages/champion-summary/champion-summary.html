@@ -1,0 +1,99 @@
+<!--
+  Generated template for the ChampionSummaryPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>champion-summary</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content no-padding no-margin>
+  <ion-grid no-padding no-margin class="grid-champions">
+    <ion-row>
+      <ion-col col-12 col-sm>
+        <div class="panel-champions" [ngStyle]="{'backgroundImage':'url(http://ddragon.leagueoflegends.com/cdn/img/champion/splash/'+key+'_0.jpg)'}">
+         <div class="name-champions">
+
+            <div class="icon-champions" [ngStyle]="{'backgroundImage':'url(http://ddragon.leagueoflegends.com/cdn/6.24.1/img/champion/'+key+'.png)'}">
+            </div>
+
+            <h1>{{name}}</h1>
+            <h4>{{title}}</h4>
+        </div>
+
+        <ion-card>
+          <ion-card-header>
+            Lore
+          </ion-card-header>
+
+          <ion-card-content color="dark">
+            {{lore}}
+          </ion-card-content>
+        </ion-card>
+
+
+        <ion-card>
+          <ion-card-header>
+            Status
+          </ion-card-header>
+
+          <ion-card-content color="dark">
+            <ion-row>
+              <ion-col>
+                <strong>Armor</strong>
+                {{stats.armor}}
+              </ion-col>
+              <ion-col>
+                <strong>Attack</strong>
+                {{stats.attackdamage}}
+              </ion-col>
+              <ion-col>
+                <strong>HP</strong>
+                {{stats.hp}}
+              </ion-col>
+              <ion-col>
+                <strong>Move Speed</strong>
+                {{stats.movespeed}}
+              </ion-col>
+              <ion-col>
+                <strong>Critical</strong>
+                {{stats.crit}}
+              </ion-col>
+            </ion-row>
+          </ion-card-content>
+        </ion-card>
+
+        <ion-card>
+          <ion-card-header>
+            Passive
+          </ion-card-header>
+
+          <ion-card-content color="dark">
+            <ion-row>
+              <ion-col>
+                <ion-avatar item-left>
+                    <img src="http://ddragon.leagueoflegends.com/cdn/6.24.1/img/passive/{{passive.image.full}}"/>
+                </ion-avatar>
+              </ion-col>
+              <ion-col>
+                <strong>Name</strong>
+                {{passive.name}}
+              </ion-col>
+              <ion-col>
+                <strong>Description</strong>
+                {{passive.description}}
+              </ion-col>
+            </ion-row>
+          </ion-card-content>
+        </ion-card>
+
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

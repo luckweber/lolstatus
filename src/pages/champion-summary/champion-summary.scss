@@ -1,0 +1,29 @@
+page-champion-summary {
+  .panel-champions{
+    width: 100%;
+    height: 350px;
+    color:white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right;
+  }
+
+
+  .grid-champions{
+    background-color: black;
+    margin:0;
+    padding: 0;
+  }
+
+  .name-champions{
+    background-color: rgba(0,0,0,0.5);
+    height: 100%;
+    overflow: auto;
+  }
+  .icon-champions{
+    width: 150px;
+    height: 150px;
+    background-size: 100% 100%;
+  }
+}

@@ -7,24 +7,44 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 
+
+//Novas Paginas
+import { ChampionPage } from '../pages/champion/champion';
+import { DashboardPage } from '../pages/dashboard/dashboard';
+import { ChampionBuildPage } from '../pages/champion-build/champion-build';
+import { ChampionSummaryPage } from '../pages/champion-summary/champion-summary';
+import { ProviderServiceProvider } from '../providers/provider-service/provider-service';
+import { HttpModule } from '@angular/http';
+
+
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage,
+    ChampionPage,
+    DashboardPage,
+    ChampionBuildPage,
+    ChampionSummaryPage
   ],
   imports: [
     BrowserModule,
+    HttpModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    ChampionPage,
+    DashboardPage,
+    ChampionBuildPage,
+    ChampionSummaryPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    ProviderServiceProvider
   ]
 })
 export class AppModule {}
