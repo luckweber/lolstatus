@@ -11,6 +11,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
  import { ChampionSummaryPage} from '../../pages/champion-summary/champion-summary';
  import { ChampionBuildPage} from '../../pages/champion-build/champion-build';
+ import { ChampionSpellPage} from '../../pages/champion-spell/champion-spell';
 
 
 @IonicPage()
@@ -26,7 +27,8 @@ export class ChampionPage {
 
 
   tab1Root:any = ChampionSummaryPage;
-  tab2Root:any = ChampionBuildPage;
+  tab2Root:any = ChampionSpellPage;
+  tab3Root:any = ChampionBuildPage;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     let url = navParams.get('objectParam');

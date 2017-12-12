@@ -11,6 +11,7 @@ import { HomePage } from '../pages/home/home';
 //Novas Paginas
 import { ChampionPage } from '../pages/champion/champion';
 import { DashboardPage } from '../pages/dashboard/dashboard';
+import { ChampionSpellPage } from '../pages/champion-spell/champion-spell';
 import { ChampionBuildPage } from '../pages/champion-build/champion-build';
 import { ChampionSummaryPage } from '../pages/champion-summary/champion-summary';
 import { ProviderServiceProvider } from '../providers/provider-service/provider-service';
@@ -24,7 +25,8 @@ import { HttpModule } from '@angular/http';
     ChampionPage,
     DashboardPage,
     ChampionBuildPage,
-    ChampionSummaryPage
+    ChampionSummaryPage,
+    ChampionSpellPage
   ],
   imports: [
     BrowserModule,
@@ -38,7 +40,8 @@ import { HttpModule } from '@angular/http';
     ChampionPage,
     DashboardPage,
     ChampionBuildPage,
-    ChampionSummaryPage
+    ChampionSummaryPage,
+    ChampionSpellPage
   ],
   providers: [
     StatusBar,
